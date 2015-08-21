@@ -14,5 +14,4 @@ return [
         'username' => 'root',
         'password' => ''
     ],
-    'BUG' => '1',
 ];
