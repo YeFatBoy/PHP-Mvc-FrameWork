@@ -11,7 +11,6 @@
 */
 
 namespace ShuYe;
-ini_set("display_errors",1);
 
 //定义常量
 define('BASEDIR', __DIR__);
