@@ -69,7 +69,7 @@ class Router
             );
         }
         //定义当前模块
-        define(_MODEL_, $url['Model']);
+        define('_MODEL_', $url['Model']);
         
         $class = '\\'.$url['Model']."\\Controller\\".$url['Controller'];
         $obj = new $class();

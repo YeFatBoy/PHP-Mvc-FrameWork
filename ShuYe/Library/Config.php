@@ -41,10 +41,9 @@ class Config implements \ArrayAccess
     {
         if (empty($this->configs[$offset])) {
             $file_path = $this->path . '/' . $offset . '.php';
-            $config = require $file_path;
-            $this->configs[$offset] = $config;
+            $data = require $file_path;
+            $this->configs[$offset] = $data;
         }
-        
         return $this->configs[$offset];
     }
 

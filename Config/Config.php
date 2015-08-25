@@ -12,6 +12,7 @@ return [
     'DB' => [
         'host' => 'localhost',
         'username' => 'root',
-        'password' => ''
+        'password' => '',
+        'database' => 'shop',
     ],
 ];

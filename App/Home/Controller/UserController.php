@@ -11,15 +11,12 @@
 
 namespace Home\Controller;
 
-use Home\Model\UserModel;
 use ShuYe\Library\Mvc\Controller;
 
 class UserController extends Controller{
 
     public function index(){
-        
-        $user = new UserModel();
-        $this->assign('list',$user->getList());
-        $this->display('user');
+        $this->assign('list',$this->model('UserModel')->getList());
+        $this->display('User');
     }
 }
