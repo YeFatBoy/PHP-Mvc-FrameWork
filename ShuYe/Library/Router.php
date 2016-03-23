@@ -45,7 +45,7 @@ class Router
     public function setRouter(){
         
         $script_name = $_SERVER['SCRIPT_NAME'];
-        $php_self = $_SERVER['PHP_SELF'];
+        $php_self = $_SERVER['REQUEST_URI'];
                 
         if ($script_name == $php_self){
             $url = array(
